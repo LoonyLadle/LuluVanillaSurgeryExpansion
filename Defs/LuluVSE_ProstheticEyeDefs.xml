@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Defs>
+  <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>LuluVSE_SimpleProstheticEye</defName>
+    <label>prosthetic eye</label>
+    <description>An eye prosthesis. A primitive neural interface connects to a low-resolution camera. The image is grainy and slow to respond to rapid changes in light, but it's better than the alternative.</description>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <Mass>0.4</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LuluVSE_SimpleProstheticEye</defName>
+    <label>prosthetic eye</label>
+    <labelNoun>a prosthetic eye</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.65</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved>LuluVSE_SimpleProstheticEye</spawnThingOnRemoved>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>LuluVSE_InstallSimpleProstheticEye</defName>
+    <label>install prosthetic eye</label>
+    <description>Install a prosthetic eye.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic eye.</jobString>
+    <workAmount>3000</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LuluVSE_SimpleProstheticEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>LuluVSE_SimpleProstheticEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LuluVSE_SimpleProstheticEye</addsHediff>
+  </RecipeDef>
+</Defs>
