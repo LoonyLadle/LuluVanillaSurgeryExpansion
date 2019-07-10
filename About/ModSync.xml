@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ModSyncNinjaData>
+  <ID>51902822-e050-4401-a844-fe9863da7679</ID>
+  <ModName>Lulu's Vanilla Surgery Expansion</ModName>
+  <Version>1.0.1</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>LoonyLadle</Owner>
+    <Project>LuluVanillaSurgeryExpansion</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
