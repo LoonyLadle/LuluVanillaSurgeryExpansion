@@ -3,7 +3,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>LuluVSE_BionicJaw</defName>
     <label>bionic jaw</label>
-    <description>An advanced artifical jaw. It is better than a biological jaw in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+    <description>An advanced artifical jaw. Silenced mini-servos give great strength, and the lower jaw can unhinge to accomodate oversized objects. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
     <techLevel>Spacer</techLevel>
     <costList>
       <Plasteel>15</Plasteel>
@@ -22,6 +22,20 @@
     <defName>LuluVSE_BionicJaw</defName>
     <label>bionic jaw</label>
     <labelNoun>a bionic jaw</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>teeth</label>
+            <capacities>
+              <li>Bite</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.25</partEfficiency>

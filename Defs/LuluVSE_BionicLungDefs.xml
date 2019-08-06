@@ -3,7 +3,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>LuluVSE_BionicLung</defName>
     <label>bionic lung</label>
-    <description>An advanced artifical lung. It is immune to the ravages of old age and chemical filters remove dangerous air pollutants prior to oxygen exchange, improving both efficiency and foxic resistance. It is better than a biological lung in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+    <description>An advanced artifical lung. It is immune to the ravages of old age and chemical filters remove dangerous air pollutants prior to oxygen exchange, improving efficiency. It is better than a biological lung in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
     <techLevel>Spacer</techLevel>
     <costList>
       <Plasteel>10</Plasteel>
@@ -22,13 +22,6 @@
     <defName>LuluVSE_BionicLung</defName>
     <label>bionic lung</label>
     <labelNoun>a bionic lung</labelNoun>
-    <stages>
-      <li>
-        <statOffsets>
-          <ToxicSensitivity>-0.25</ToxicSensitivity>
-        </statOffsets>
-      </li>
-    </stages>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.25</partEfficiency>
