@@ -3,7 +3,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>LuluVSE_BionicKidney</defName>
     <label>bionic kidney</label>
-    <description>An advanced artifical kidney. It is better than a biological kidney in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+    <description>An advanced artifical kidney. It utilises a uniquely formed microfibrous net to achieve complete blood filtration and cleansing. A lattice-dust healing system allows it to recover from damage. It is better than a biological kidney in almost every way.</description>
     <techLevel>Spacer</techLevel>
     <costList>
       <Plasteel>10</Plasteel>

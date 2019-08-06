@@ -3,7 +3,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>LuluVSE_BionicLiver</defName>
     <label>bionic liver</label>
-    <description>An advanced artifical liver. It is better than a biological liver in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+    <description>An advanced artifical liver. It contains a nanofurnace that efficiently converts toxins and lipids into useful molecules that aid digestion. A lattice-dust healing system allows it to recover from damage. It is better than a biological liver in almost every way.</description>
     <techLevel>Spacer</techLevel>
     <costList>
       <Plasteel>15</Plasteel>
