@@ -3,7 +3,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>LuluVSE_BionicJaw</defName>
     <label>bionic jaw</label>
-    <description>An advanced artifical jaw. Silenced mini-servos give great strength, and the lower jaw can unhinge to accomodate oversized objects. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
+    <description>An advanced artifical jaw. A dynamic hinging system allows a wide range of movement in the mandible and prodigious strength. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
     <techLevel>Spacer</techLevel>
     <costList>
       <Plasteel>15</Plasteel>
