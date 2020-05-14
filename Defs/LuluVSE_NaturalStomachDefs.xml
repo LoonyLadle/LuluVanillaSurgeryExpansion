@@ -5,31 +5,20 @@
 		<defName>Stomach</defName>
 		<label>stomach</label>
 		<description>A biological human stomach. Breaks down and absorbs nutrients from food.</description>
+		<descriptionHyperlinks><RecipeDef>LuluVSE_InstallNaturalStomach</RecipeDef></descriptionHyperlinks>
 		<statBases>
 			<MarketValue>400</MarketValue>
 			<Mass>1</Mass>
 		</statBases>
 	</ThingDef>
 	
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
 		<defName>LuluVSE_InstallNaturalStomach</defName>
 		<label>install stomach</label>
 		<description>Install a biological stomach.</description>
-		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<descriptionHyperlinks><ThingDef>Stomach</ThingDef></descriptionHyperlinks>
 		<jobString>Installing stomach.</jobString>
-		<workAmount>2500</workAmount>
-		<skillRequirements>
-			<Medicine>5</Medicine>
-		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -40,9 +29,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>Stomach</li>
 			</thingDefs>
