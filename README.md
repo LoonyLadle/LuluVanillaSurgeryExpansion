@@ -4,7 +4,6 @@
 ## Like what?
 * Bionic jaws, kidneys, livers, and lungs.
 * Prosthetic eyes.
-* Hook hands.
 * Natural stomachs. 
 
 ## Why no prosthetic organs?
