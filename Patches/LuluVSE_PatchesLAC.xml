@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Lulu's Animal Cybernetics</li>
-    </mods>
-    <match Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
-      <value>
-          <li>LuluVSE_InstallBionicJaw</li>
-          <li>LuluVSE_InstallBionicKidney</li>
-          <li>LuluVSE_InstallBionicLiver</li>
-          <li>LuluVSE_InstallBionicLung</li>
-          <li>LuluVSE_InstallHookHand</li>
-          <li>LuluVSE_InstallSimpleProstheticEye</li>
-      </value>
-    </match>
-  </Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lulu's Animal Cybernetics</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+			<value>
+					<li>LuluVSE_InstallBionicJaw</li>
+					<li>LuluVSE_InstallBionicKidney</li>
+					<li>LuluVSE_InstallBionicLiver</li>
+					<li>LuluVSE_InstallBionicLung</li>
+					<li>LuluVSE_InstallSimpleProstheticEye</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>

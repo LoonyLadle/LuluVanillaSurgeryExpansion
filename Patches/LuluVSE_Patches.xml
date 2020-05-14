@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
-        <value>
-          <li>LuluVSE_InstallBionicJaw</li>
-          <li>LuluVSE_InstallBionicKidney</li>
-          <li>LuluVSE_InstallBionicLiver</li>
-          <li>LuluVSE_InstallBionicLung</li>
-          <li>LuluVSE_InstallHookHand</li>
-          <li>LuluVSE_InstallNaturalStomach</li>
-          <li>LuluVSE_InstallSimpleProstheticEye</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Steel"]</xpath>
-        <value>
-          <isTechHediff>true</isTechHediff>
-          <techHediffsTags>
-            <li>Poor</li>
-          </techHediffsTags>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/BodyPartDef[defName="Stomach"]</xpath>
-        <value>
-          <spawnThingOnRemoved>Stomach</spawnThingOnRemoved>
-        </value>
-      </li>
-    </operations>
-  </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
+		<value>
+			<li>LuluVSE_InstallBionicJaw</li>
+			<li>LuluVSE_InstallBionicKidney</li>
+			<li>LuluVSE_InstallBionicLiver</li>
+			<li>LuluVSE_InstallBionicLung</li>
+			<li>LuluVSE_InstallNaturalStomach</li>
+			<li>LuluVSE_InstallSimpleProstheticEye</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyPartDef[defName="Stomach"]</xpath>
+		<value>
+			<spawnThingOnRemoved>Stomach</spawnThingOnRemoved>
+		</value>
+	</Operation>
 </Patch>

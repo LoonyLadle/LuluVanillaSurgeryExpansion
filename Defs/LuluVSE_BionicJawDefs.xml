@@ -1,87 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Defs>
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>LuluVSE_BionicJaw</defName>
-    <label>bionic jaw</label>
-    <description>An advanced artifical jaw. A dynamic hinging system allows a wide range of movement in the mandible and prodigious strength. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
-    <techLevel>Spacer</techLevel>
-    <costList>
-      <Plasteel>15</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToMake>26000</WorkToMake>
-      <Mass>2</Mass>
-    </statBases>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>LuluVSE_BionicJaw</defName>
+		<label>bionic jaw</label>
+		<description>An advanced artifical jaw. A dynamic hinging system allows a wide range of movement in the mandible and prodigious strength. A lattice-dust healing system allows it to recover from damage. It is better than a biological jaw in almost every way.</description>
+		<descriptionHyperlinks><RecipeDef>LuluVSE_InstallBionicJaw</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>LuluVSE_BionicJaw</defName>
-    <label>bionic jaw</label>
-    <labelNoun>a bionic jaw</labelNoun>
-    <comps>
-      <li Class="HediffCompProperties_VerbGiver">
-        <tools>
-          <li>
-            <label>teeth</label>
-            <capacities>
-              <li>Bite</li>
-            </capacities>
-            <power>12</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-        </tools>
-      </li>
-    </comps>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-    </addedPartProps>
-    <spawnThingOnRemoved>LuluVSE_BionicJaw</spawnThingOnRemoved>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>LuluVSE_BionicJaw</defName>
+		<label>bionic jaw</label>
+		<labelNoun>a bionic jaw</labelNoun>
+		<description>An installed bionic jaw.</description>
+		<descriptionHyperlinks><ThingDef>LuluVSE_BionicJaw</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>teeth</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>LuluVSE_BionicJaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
 
-  <RecipeDef ParentName="SurgeryFlesh">
-    <defName>LuluVSE_InstallBionicJaw</defName>
-    <label>install bionic jaw</label>
-    <description>Install a bionic jaw.</description>
-    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-    <jobString>Installing bionic jaw.</jobString>
-    <workAmount>2500</workAmount>
-    <skillRequirements>
-      <Medicine>5</Medicine>
-    </skillRequirements>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-          </categories>
-        </filter>
-        <count>2</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>LuluVSE_BionicJaw</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-      <thingDefs>
-        <li>LuluVSE_BionicJaw</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Jaw</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>LuluVSE_BionicJaw</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>LuluVSE_InstallBionicJaw</defName>
+		<label>install bionic jaw</label>
+		<description>Install a bionic jaw.</description>
+		<descriptionHyperlinks><ThingDef>LuluVSE_BionicJaw</ThingDef></descriptionHyperlinks>
+		<jobString>Installing bionic jaw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LuluVSE_BionicJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>LuluVSE_BionicJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>LuluVSE_BionicJaw</addsHediff>
+	</RecipeDef>
 </Defs>
